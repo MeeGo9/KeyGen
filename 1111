@@ -1,3 +1,21 @@
+Get-ScheduledTask | Where-Object {
+    $_.TaskName -match 'Remote|RDP|WSL' -or
+    $_.TaskPath -match 'Remote|RDP|WSL'
+} | Select-Object TaskPath,TaskName,State
+
+
+Get-CimInstance Win32_StartupCommand | Select-Object Name,Command,Location
+
+
+Get-Item C:\Windows\System32\rdclientax.dll, C:\Windows\SysWOW64\rdclientax.dll -ErrorAction SilentlyContinue |
+Select-Object FullName,Length,LastWriteTime
+
+
+
+
+
+
+
 cd C:\ServiceCenter\deployment\production\scripts
 powershell.exe -ExecutionPolicy Bypass -File .\restore-test.ps1 -Newest
 
