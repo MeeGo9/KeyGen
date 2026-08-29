@@ -1,3 +1,9 @@
+Test-Path "C:\ServiceCenter\deployment\production\scripts\backup.ps1"
+Test-Path "D:\ServiceCenterBackups"
+
+
+
+
 Get-CimInstance Win32_Process | Where-Object {
     $_.Name -match 'docker|wsl|mstsc|rdp|remote'
 } | Select-Object Name,ProcessId,ParentProcessId,CommandLine
