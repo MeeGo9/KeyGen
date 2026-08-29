@@ -1,4 +1,12 @@
 cd C:\ServiceCenter\deployment\production\scripts
+
+Get-Content .\restore-test.ps1 |
+    Select-Object -Skip 55 -First 35
+
+
+
+
+cd C:\ServiceCenter\deployment\production\scripts
 powershell.exe -ExecutionPolicy Bypass -File .\restore-test.ps1 -Newest
 
 
