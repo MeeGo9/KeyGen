@@ -1,4 +1,9 @@
 cd C:\ServiceCenter\deployment\production\scripts
+powershell.exe -ExecutionPolicy Bypass -File .\backup.ps1
+
+
+
+cd C:\ServiceCenter\deployment\production\scripts
 powershell.exe -ExecutionPolicy Bypass -File .\update.ps1
 
 
