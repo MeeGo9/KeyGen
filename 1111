@@ -1,3 +1,9 @@
+cd C:\ServiceCenter\deployment\production\scripts
+powershell.exe -ExecutionPolicy Bypass -File .\restore-test.ps1 -Newest
+
+
+
+
 cd C:\ServiceCenter\deployment\production
 Get-Content .\README.md | Select-String -Pattern "restore" -Context 5,15
 
