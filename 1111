@@ -1,3 +1,7 @@
+cd C:\ServiceCenter\deployment\production\scripts
+powershell.exe -ExecutionPolicy Bypass -File .\update.ps1
+
+
 git restore deployment/production/scripts/first-install.ps1
 rm deployment/production/scripts/null
 
