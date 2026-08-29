@@ -1,3 +1,8 @@
+-NoProfile -ExecutionPolicy Bypass -File "C:\ServiceCenter\deployment\production\scripts\backup.ps1"
+
+
+
+
 Test-Path "C:\ServiceCenter\deployment\production\scripts\backup.ps1"
 Test-Path "D:\ServiceCenterBackups"
 
