@@ -1,3 +1,7 @@
+Get-ChildItem D:\ServiceCenterBackups | Sort-Object LastWriteTime -Descending | Select-Object -First 5
+
+
+
 cd C:\ServiceCenter\deployment\production\scripts
 powershell.exe -ExecutionPolicy Bypass -File .\backup.ps1
 
