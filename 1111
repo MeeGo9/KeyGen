@@ -1,3 +1,10 @@
+Select-String -Path .\restore-test.ps1 `
+  -Pattern "docker run|pg_isready|pg_restore|Invoke-TemporaryPsql" `
+  -Context 5,10
+
+
+
+
 cd C:\ServiceCenter\deployment\production\scripts
 
 Get-Content .\restore-test.ps1 |
