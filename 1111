@@ -1,3 +1,9 @@
+cd C:\ServiceCenter\deployment\production
+Get-Content .\README.md | Select-String -Pattern "restore" -Context 5,15
+
+
+
+
 Get-ChildItem D:\ServiceCenterBackups | Sort-Object LastWriteTime -Descending | Select-Object -First 5
 
 
